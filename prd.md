@@ -138,8 +138,8 @@ Sidebar on desktop, drawer/hamburger on mobile. Unauthenticated users go to /log
 ## 13. Approval & Sign-off
 | Name | Role | Signature | Date |
 |---|---|---|---|
-| [Your Name] | Developer | | |
-| [Senior / Mentor Name] | Approver | | |
+| [Aadhitya Reddy Seelam] | Developer | | |
+| [Siddhid Gopujkar] | Approver | | |
 
 ---
 
