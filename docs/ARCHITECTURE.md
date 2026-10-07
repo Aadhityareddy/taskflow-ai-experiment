@@ -1,7 +1,7 @@
 # Architecture
 
 Source of truth: `prd.md`. This doc describes stack, structure, and patterns for the TaskFlow Reflex app.
-It is a plan for the code that Tasks 2+ will build. No application code exists yet.
+Task 2 built the skeleton (see CHANGELOG.md v0.2): `rxconfig.py`, `requirements.txt`, `.gitignore`, `app/app.py`, `app/styles.py`, and the `app/state/`, `app/pages/`, `app/components/` packages. The feature modules inside those packages are built in later tasks; the table in §2 is the target, not a claim that every file exists.
 
 ## 1. Stack
 

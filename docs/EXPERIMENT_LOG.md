@@ -7,6 +7,7 @@
 | Version | Change | Tasks needed | Plan/result right first time? | Regressions? | Unrequested changes? | Docs updated by AI? | Followed AGENTS.md unprompted? | Notes |
 |---|---|---|---|---|---|---|---|---|
 | v0.1 | Generate supporting docs | | | | | | | |
+| v0.2 | Skeleton (no features) | | | | | | | |
 | v1.0 | F1-F10 build | | | | | | | |
 | v1.1 | F11, F12 added via docs | | | | | | | |
 | v1.2 | Design change | | | | | | | |

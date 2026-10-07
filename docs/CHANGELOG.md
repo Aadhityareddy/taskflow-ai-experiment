@@ -5,6 +5,17 @@ Newest first. Keep entries short; one block per version.
 
 ---
 
+## v0.2 — Skeleton (no features)
+- **Date:** 07-Oct-2026
+- **Status:** Done
+- **What changed:** Initialized a Reflex app with the blank template (`reflex==0.9.12`, pinned in `requirements.txt`) and shaped it to the ARCHITECTURE.md structure: `rxconfig.py` (app_name `app`), `app/app.py` (app object + placeholder landing page), `app/styles.py` (all DESIGN_SYSTEM.md tokens), and empty `app/state/`, `app/pages/`, `app/components/` packages. Added `.gitignore` (`.web/`, `.states/`, `__pycache__/`, `*.db`, `venv/`, plus `reflex.lock/`). Confirmed `reflex run` starts (frontend 3000, backend 8000).
+- **Why:** Task 2 of the experiment: make the project runnable before any feature work so later tasks start from a stable base.
+- **No features:** F1–F10 stay **Planned**. `app/app.py` renders only a placeholder heading; no state classes, models, or feature components exist.
+- **What must not change:** `prd.md` remains the source of truth. The pinned Reflex version (0.9.12) is followed by all later code. Design values live only in `app/styles.py`.
+- **Follow-ups:** F1–F3 (Task 3), then F4–F6, F7–F10. DB migration commands (`reflex db init/makemigrations/migrate`) get documented in README.md when models are first added.
+
+---
+
 ## v0.1 — Supporting docs (docs only)
 - **Date:** 06-Oct-2026
 - **Status:** Done
