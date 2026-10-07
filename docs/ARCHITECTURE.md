@@ -18,7 +18,7 @@ Reflex version must be pinned in `requirements.txt` (created in Task 2). Follow 
 ## 2. Target directory structure
 
 ```
-rxconfig.py            # Reflex app config (app_name = taskflow)
+rxconfig.py            # Reflex app config (app_name = app)
 requirements.txt       # pinned reflex version
 .gitignore             # .web, .states, __pycache__, *.db, venv
 app/
@@ -112,7 +112,7 @@ Planned models in `app/models.py` (fields finalized when Task 2/3 build them):
 ## 6. Rendering & performance
 - Target: pages respond in under 1 second with up to 500 tasks (local).
 - Lists render with `rx.foreach`; avoid recomputing derived lists inside loops.
-- Dashboard shows 4 metrics + next 5 due tasks; keep that query bounded.
+- Dashboard shows 3 metrics + next 5 due tasks; keep that query bounded.
 
 ## 7. Error / loading / empty states
 Every list or data screen must render all three states (F10) using the shared `state_views` components. No page should render a bare list without an empty-state fallback.
@@ -124,3 +124,10 @@ Light and dark themes are both defined as tokens (DESIGN_SYSTEM.md). `SettingsSt
 - Stack stays Python + Reflex + SQLite. Adding a separate backend API is out of scope.
 - No real authentication, multi-user support, notifications, or deployment.
 - Design values come only from tokens in `app/styles.py`; pages must not hardcode colors or spacing.
+
+### Data rules
+- Priority sorts by rank: Low=1, Medium=2, High=3 (not alphabetically).
+- Due date is validated only when it is set or changed. Editing other fields of an overdue task must still work.
+- Deleting a project sets project_id to null on its tasks. Tasks are never deleted with a project.
+- Project color is stored as a token name (for example color_success), not a hex value, so it adapts to dark theme.
+- Database tables are created with Reflex's migration commands (reflex db init, reflex db makemigrations, reflex db migrate). Document the commands in README.md when first used.
