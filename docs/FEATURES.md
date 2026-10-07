@@ -27,7 +27,7 @@ All v1.0 features are **Planned**. No code exists yet (Task 1 is docs-only).
 |---|---|---|---|
 | F11 | _to be defined_ | Not started | Added in the F11/F12 round (see PROMPTS.md) |
 | F12 | _to be defined_ | Not started | Added in the F11/F12 round (see PROMPTS.md) |
-| F13 | Task tags | Not started | Cold-start task (see PROMPTS.md) |
+| F13 | _to be defined_ | Not started | Cold-start task (see PROMPTS.md) |
 
 ## Feature-to-doc map
 | Feature | Primary docs |
