@@ -5,6 +5,13 @@ Add an entry for any non-obvious choice (AGENTS.md). Newest first.
 
 ---
 
+## D-006 — Reflex blank template, app_name `app`, version 0.9.12
+- **What:** The skeleton is a Reflex blank template with `app_name = "app"`, so the package is `app/` and imports are `from app import ...`. Reflex is pinned to `0.9.12` in `requirements.txt`. `app/styles.py` (all DESIGN_SYSTEM.md tokens) is created in this task even though its consumer features are not.
+- **Why:** prd.md §14 fixes the package name as `app`; ARCHITECTURE.md §2 fixes the file layout. Pinning follows AGENTS.md step 3. Creating `styles.py` now satisfies DESIGN_SYSTEM.md's note that tokens are built in Task 2, giving later tasks a single place for design values.
+- **Must not change:** Later code follows the 0.9.12 API. The package stays `app/`. No React/JS is added. Design values stay only in `app/styles.py`.
+
+---
+
 ## D-005 — Mock auth with cookie/local-storage session
 - **What:** Login is fake (any email + password of 6+ chars) and the "session" is stored in a browser cookie / local storage, rehydrated on load.
 - **Why:** Reflex State resets on page refresh, so F1's "login survives page refresh" needs a persistent client-side marker. Real auth is out of scope (prd.md §1.3).

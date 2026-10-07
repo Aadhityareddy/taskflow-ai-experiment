@@ -45,4 +45,5 @@ All v1.0 features are **Planned**. No code exists yet (Task 1 is docs-only).
 ## Status change log
 | Date | Feature | From → To | Reason |
 |---|---|---|---|
+| 07-Oct-2026 | F1–F10 | Planned (unchanged) | Skeleton (v0.2) added: Reflex app runs; no features implemented |
 | 06-Oct-2026 | F1–F10 | (new) → Planned | Defined in prd.md v1.0 |
